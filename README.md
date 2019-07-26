@@ -30,13 +30,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+A: forEach executes a method for every item in the array, but doesn't actually return anything. On the other hand, map will actually use return values to return a new array. forEach doesn't change the original array, so use it when you want to simply do something with the data in the array. Since map returns a new array, it might be preferable to use it if you need to alter the dataset.
+
 2. What is the difference between a function and a method?
+
+A: A method is a member of a class or constructor, whereas a function is not.
 
 3. What is closure?
 
+A: A closure is a function that has access to its parent's scope even after the parent has closed.
+
 4. Describe the four rules of the 'this' keyword.
 
+A:
+    1. Window Binding - "this" is bound to the global/window scope.
+    2. Implicit Binding - "this" is bound to the object preceeding the "." operator.
+    3. New Binding - "this" is bound to the object created by the "new" keyword.
+    4. Explicit Binding - "this" is bound to the object using .call, .apply, or .bind.
+
 5. Why do we need super() in an extended class?
+
+A: Classes don't actually exist in JavaScript. They're simply an abstraction away from prototypes. "Extends" is an abstraction away from: childConstructor.prototype = Object.create(parentConstructor.prototype) and super() is an abstraction away from: parentConstructor.call(this, attributes).
 
 ## Project Set up
 
